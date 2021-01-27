@@ -3,11 +3,18 @@ const HTMLParser = require('node-html-parser');
 
 const Utility = require('./scrape-utilities.js');
 
+let chrome = require('selenium-webdriver/chrome');
+let options = new chrome.Options();
+options.addArguments("--no-sandbox");
+options.addArguments("--headless");
 
 
  const scrape = async () => {
 
-    let driver = await new Builder().forBrowser('chrome').build();
+    let driver = await new Builder()
+    	.forBrowser('chrome')
+        .setChromeOptions(options)
+    	.build();
 
     let events = [];
     let errors = [];
