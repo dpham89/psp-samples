@@ -13,7 +13,7 @@ options.addArguments("--headless");
 
     let driver = await new Builder()
     	.forBrowser('chrome')
-        .setChromeOptions(options)
+        //.setChromeOptions(options)
     	.build();
 
     let events = [];
