@@ -39,7 +39,7 @@ done
 echo $'\n'
 echo -e "${GRE}Valid JSON:${NC}"
 echo "${validjsonarr[*]}"
-echo -e "${YEL}No returned JSON (Missing console.log(r)):${NC}"
+echo -e "${YEL}No JSON output (Missing console.log(r)):${NC}"
 echo "${emptyjsonarr[*]}"
 echo -e "${RED}Invalid JSON:${NC}"
 echo "${invalidjsonarr[*]}"
