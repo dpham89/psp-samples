@@ -20,5 +20,8 @@ jobs:
         cd scripts 
         npm ci
         npm install chromedriver --detect_chromedriver_version
-        node Corpuschristi.js
+        bash ./bash/jsonvalidate.sh County
+        bash ./bash/jsonvalidate.sh College
+        bash ./bash/jsonvalidate.sh ISD
+        bash ./bash/jsonvalidate.sh City
         
